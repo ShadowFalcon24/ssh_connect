@@ -132,3 +132,6 @@ $selectedConnection = Show-ConnectionMenu
 if ($selectedConnection) {
     Connect-ToSSH -Host $selectedConnection.Host -Port $selectedConnection.Port -Username $selectedConnection.Username -Password $selectedConnection.Password
 }
+
+# Pause to keep the window open
+Read-Host -Prompt "Press Enter to close the window"
